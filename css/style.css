@@ -1,0 +1,657 @@
+@import url("https://fonts.googleapis.com/css2?family=Spinnaker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
+:root {
+  --primery-font: "Spinnaker", sans-serif;
+  --active-color: #3d3d3d;
+  --dominant-color: #fed301;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  top: 0;
+  background-color: white;
+}
+
+header nav {
+  width: 70%;
+  background-color: white;
+}
+
+header nav ul {
+  gap: 10px;
+}
+header nav .collapse {
+  flex-direction: row-reverse;
+}
+
+header nav .navbar-brand {
+  font-size: 30px;
+  font-family: var(--primery-font);
+  font-weight: 900;
+}
+
+main {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  margin: 65px 0px 25px;
+}
+
+main section {
+  width: 100%;
+}
+
+main .banner {
+  background-image: url("https://static.wixstatic.com/media/08fe21_10aae2678a2e4e8995c6fd05810f5942.jpg/v1/fill/w_1263,h_815,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/08fe21_10aae2678a2e4e8995c6fd05810f5942.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 815px;
+  position: relative;
+}
+
+main .banner .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+main .banner .overlay h1 {
+  color: var(--dominant-color);
+  font-size: 84px;
+  font-family: var(--primery-font);
+  font-weight: bold;
+  text-align: center;
+}
+
+main .banner .overlay p {
+  color: white;
+  text-align: center;
+  width: 38%;
+  font-family: var(--primery-font);
+  letter-spacing: 0.1em;
+}
+main .banner .overlay h4 {
+  color: white;
+  font-size: 28px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: italic;
+  letter-spacing: 0.3em;
+  text-align: center;
+  font-weight: 100;
+}
+
+main .books {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  gap: 70px;
+}
+
+main .books .top {
+  width: 70%;
+  gap: 20px;
+}
+
+main .books .top div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: solid 1px var(--dominant-color);
+  width: 100%;
+  height: 150px;
+}
+
+main .books .top div h6 {
+  font-size: 30px;
+  font-family: var(--primery-font);
+  letter-spacing: 0.2em;
+}
+
+main .books .bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 110px;
+}
+
+main .books .bottom img {
+  width: 100%;
+  height: 335px;
+  transition: 0.4s;
+}
+
+main .books .bottom img:hover {
+  opacity: 0.7;
+}
+
+main .books .bottom .books_bottom div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  margin-top: 18%;
+  border-top: solid 1px var(--dominant-color);
+  gap: 20px;
+  padding: 30px 0px 0px 0px;
+}
+
+main .books .bottom .books_bottom h6 {
+  font-size: 16px;
+  font-family: var(--primery-font);
+  font-style: italic;
+  color: var(--active-color);
+  letter-spacing: 0.1em;
+}
+
+main .books .bottom .books_bottom button {
+  width: 100px;
+  height: 40px;
+  border: solid 1px rgba(19, 18, 18, 0.574);
+  color: #3d3d3dcb;
+  font-family: var(--primery-font);
+  transition: 0.4s;
+}
+
+main .books .bottom .books_bottom button:hover {
+  background-color: #3d3d3d;
+  color: white;
+  border: none;
+}
+
+main .press {
+  display: grid;
+  background-color: var(--dominant-color);
+  margin: 100px 0px;
+}
+
+main .press .top {
+  display: flex;
+  justify-content: center;
+}
+
+main .press .top h2 {
+  text-align: center;
+  font-size: 30px;
+  font-family: var(--primery-font);
+  letter-spacing: 0.2em;
+  color: var(--active-color);
+  margin: 50px 0px;
+}
+main .press .top div {
+  border-bottom: 1px solid white;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  height: 130px;
+}
+
+main .press .middle {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  width: fit-content;
+  gap: 50px;
+  margin: 80px auto 0px;
+  height: fit-content;
+}
+
+main .press .middle div {
+  width: 254px;
+  text-align: center;
+}
+
+main .press .middle div p {
+  line-height: 1.5em;
+  letter-spacing: 0.1em;
+  font-family: var(--primery-font);
+  color: var(--active-color);
+  font-size: 16px;
+}
+
+main .press .middle div div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 50px;
+}
+
+main .press .middle div div h3 {
+  font-family: "EB Garamond", serif;
+  transform: rotate(180deg);
+  color: white;
+  font-size: 120px;
+}
+
+main .press .middle aside .hr {
+  border-top: solid 1px white;
+  width: 80px;
+  margin: 50px auto 0px;
+}
+main .press .middle aside div h5 {
+  color: black !important;
+  font-weight: 500;
+}
+
+main .press .middle aside div h5,
+main .press .middle aside div h6 {
+  text-align: center;
+  font-size: 16px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  letter-spacing: 0.1em;
+  font-style: italic;
+  color: var(--active-color);
+}
+main .bio {
+  width: 70%;
+}
+
+main .bio .top div {
+  border-bottom: 1px solid var(--dominant-color);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 100px;
+}
+
+main .bio .top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .bio .bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 70px 0px;
+}
+
+main .bio .bottom img {
+  width: 389px;
+  height: 282px;
+}
+
+main .bio .bottom p {
+  width: 219px;
+  letter-spacing: 0.08em;
+  color: var(--active-color);
+}
+
+main .events {
+  display: grid;
+  place-items: center;
+  background-color: var(--active-color);
+  padding-bottom: 50px;
+}
+
+main .events .top {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+main .events .top h2 {
+  color: white;
+  margin: 80px 0px 80px;
+  text-align: center;
+}
+
+main .events .bottom {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+  place-items: center;
+}
+
+main .events .bottom .cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  border-bottom: solid 1px var(--dominant-color);
+  border-top: solid 1px var(--active-color);
+  transition: 0.4s;
+  cursor: pointer;
+}
+main .events .bottom div {
+  padding-bottom: 20px;
+}
+main .events .bottom div:hover {
+  border-top: solid 1px var(--dominant-color);
+}
+
+main .events .bottom .cont .numb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  color: white;
+
+  font-family: var(--primery-font);
+}
+
+main .events .bottom .cont ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  color: white;
+  gap: 20px;
+  font-size: 40px;
+}
+
+main .events .bottom .cont ul .month {
+  font-size: 14px;
+}
+
+main .events .bottom .cont h2 {
+  font-size: 30px;
+  color: white;
+}
+
+main .events .bottom .cont h2 p {
+  font-size: 12px;
+  margin: 0;
+  color: var(--dominant-color);
+}
+
+main .events .bottom div button {
+  width: 121px;
+  height: 42px;
+  background-color: var(--dominant-color);
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 100;
+  border: none;
+  z-index: 1;
+}
+
+main .events .bottom div button:hover {
+  background-color: #a28703;
+}
+
+main .contact {
+  display: grid;
+}
+
+main .contact .top {
+  display: grid;
+
+  place-items: center;
+}
+
+main .contact .top div {
+  border-bottom: 1px solid var(--dominant-color);
+  width: 70%;
+  margin-bottom: 70px;
+}
+
+main .contact .top div h2 {
+  font-size: 30px;
+  font-family: var(--primery-font);
+  letter-spacing: 0.2em;
+  color: var(--active-color);
+  text-align: center;
+  line-height: 150px;
+  margin: 0px;
+}
+
+main .contact .top h6 {
+  font-size: 16px;
+  margin: 0 auto;
+  color: var(--active-color);
+  letter-spacing: 0.1em;
+  margin-bottom: 60px;
+}
+
+main .contact .middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+main .contact .middle .left h6 {
+  width: 50%;
+  font-size: 16px;
+  color: var(--active-color);
+  margin: 0 0 0 50px;
+}
+
+main .contact .middle .right form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 100%;
+}
+main .contact .middle .right input {
+  width: 258px;
+  height: 35px;
+  padding-left: 20px;
+}
+
+main .contact .middle .right button {
+  width: 148px;
+  height: 35px;
+  border: none;
+  font-size: 18px;
+  background-color: var(--dominant-color);
+  color: var(--active-color);
+  font-weight: 500;
+  font-family: var(--primery-font);
+}
+
+main .contact .bottom .top {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+main .contact .bottom .bottom ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+}
+
+main .contact .bottom .bottom ul i {
+  font-size: 22px;
+}
+
+main .contact .bottom .bottom ul li {
+  font-style: italic;
+}
+main .books_page {
+  width: 70%;
+}
+main .books_page .top,
+main .books_page .middle,
+main .books_page .bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  padding-bottom: 100px;
+  padding-top: 100px;
+  margin: 0 auto;
+  width: 92%;
+}
+
+main .books_page .top,
+main .books_page .middle {
+  border-bottom: solid 1px var(--dominant-color);
+}
+
+main .books_page aside img {
+  width: fit-content;
+  height: fit-content;
+}
+
+main .books_page aside h3 {
+  font-size: 24px;
+  font-style: italic;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  color: var(--active-color);
+}
+
+main .books_page aside div {
+  width: 30px;
+  height: 20px;
+  margin-bottom: 20px;
+  border-bottom: solid 1px var(--dominant-color);
+}
+
+main .books_page aside .right p {
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  color: var(--active-color);
+  width: 90%;
+  margin: 0;
+}
+main .books_page aside .right button {
+  width: 100px;
+  height: 40px;
+  font-size: 16px;
+  font-family: var(--primery-font);
+  color: var(--active-color);
+  border: solid 1px var(--active-color);
+  background-color: transparent;
+  margin-top: 40px;
+  transition: 0.4s;
+}
+
+main .books_page aside .right button:hover {
+  background-color: var(--active-color);
+  color: white;
+}
+
+main .registration {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 70%;
+  gap: 50px;
+  padding-top: 100px;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+main .registration .left {
+  display: grid;
+  gap: 40px;
+}
+main .registration .left h2 {
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--active-color);
+  font-style: italic;
+}
+main .registration .left h6 {
+  font-size: 16px;
+  font-weight: 100;
+  color: var(--active-color);
+  font-style: italic;
+}
+main .registration .left .input_top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+main .registration .left .input_top input,
+main .registration .left .input_bottom input {
+  width: 265px;
+  height: 48px;
+  outline: none;
+  border-radius: 0px;
+  border: solid 1px rgb(200, 199, 199);
+}
+main .registration .left .input_bottom input {
+  width: 100%;
+}
+
+main .registration .left .input_bottom button {
+  height: 55px;
+  border: none;
+  background-color: var(--dominant-color);
+  color: white;
+  font-size: 16px;
+  font-style: italic;
+  letter-spacing: 0.05em;
+  transition: 0.4s;
+}
+main .registration .left .input_bottom button:hover {
+  background-color: #f8de5f;
+}
+
+main .registration .left .input_bottom {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+main .registration .right .top h4 {
+  font-size: 20px;
+  height: 50px;
+  width: 90%;
+  border-bottom: solid 1px rgb(179, 178, 178);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--active-color);
+}
+main .registration .right div {
+  border: solid 1px rgb(183, 182, 182);
+  display: grid;
+  place-items: center;
+  width: 275px;
+  height: 170px;
+}
+main .registration .right h6 {
+  font-size: 14px;
+  width: 90%;
+  text-align: left;
+  font-weight: 100;
+}
+footer {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  row-gap: 15px;
+}
+
+footer p {
+  text-align: center;
+  font-size: 13px;
+  color: var(--active-color);
+  font-family: var(--primery-font);
+  letter-spacing: 0.1em;
+}
+
+footer p a {
+  color: var(--active-color);
+}
